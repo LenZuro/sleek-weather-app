@@ -42,10 +42,11 @@ body{
     border: none;
     border-radius: 2px;
 }
-.display {
+.display-1 {
     text-align: center;
     width: 400px;
     color: #16a864;
+    
 }
 .wrapper {
     margin: 0 9rem;
@@ -53,6 +54,7 @@ body{
     height: 45vh;
     margin: 50px auto;
     border-radius: 2px;
+   
     
 }
 .wrapper h2{

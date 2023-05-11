@@ -5,9 +5,10 @@ var city = document.querySelector('#cityoutput')
 var descrip = document.querySelector('#description')
 var temp = document.querySelector('#temp')
 var wind = document.querySelector('#wind')
+var humid = document.querySelector('#humid')
 
 
-apik = "3045dd712ffe6e702e3245525ac7fa38"
+apik = "102b4e5867289ae044239e6e6deb9004"
 
 
 
@@ -32,11 +33,15 @@ function convertion(val){
             var descrip = data['weather']['0']['description']
             var tempature = data['main']['temp']
             var wndspd = data['wind']['speed']
+            var humidity = data['humid']
+           
 
             city.innerHTML=`Weather of <span>${nameval}<span>`
             temp.innerHTML = `Temperature: <span>${ convertion(tempature)} C</span>`
             description.innerHTML = `Sky Conditions: <span>${descrip}<span>`
             wind.innerHTML = `Wind Speed: <span>${wndspd} km/h<span>`
+            humid.innerHTML = `Humidity: <span>${humidity} %<span>`
+            
 
         })
 

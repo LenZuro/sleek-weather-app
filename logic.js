@@ -21,7 +21,7 @@ function convertion(val){
 
 
 
-        fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputval.value+'&appid='+apik)
+        fetch('api.openweathermap.org/data/2.5/forecast?q='+inputval.value+'&appid='+apik)
         .then(res => res.json())
 
 
